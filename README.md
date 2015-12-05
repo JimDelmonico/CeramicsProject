@@ -15,7 +15,7 @@ Eric: Documentation, Budget, Timelining, Improvements
 
 Malik: Routes
 
-Dom: Setup Environment
+Dom: Setup Environment, Maintenance Plan
 
 Markus: Technical, Research and Diagrams
 
