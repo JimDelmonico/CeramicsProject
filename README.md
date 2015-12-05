@@ -3,22 +3,23 @@ Ceramic Measurement Application
 
 Tasks
 
-Sarah: 
+Sarah: Formula
 
-Adam:
+Adam: Interface Requires
 
-Najee:
+Najee: Needs Assessment Stakeholders
 
-Chris:
+Chris: Mocha Tests
 
-Eric: 
+Eric: Documentation, Budget, Timelining, Improvements
 
-Malik: 
+Malik: Routes
 
-Dom: 
+Dom: Setup Environment
 
 Markus: 
 
-Ricardo:
+Ricardo: Front End, Routes
 
+Jim: Github Setup, Project Purpose, Project Scope
 
