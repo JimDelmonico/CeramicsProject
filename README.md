@@ -17,7 +17,7 @@ Malik: Routes
 
 Dom: Setup Environment
 
-Markus: 
+Markus: Technical, Research and Diagrams
 
 Ricardo: Front End, Routes
 
