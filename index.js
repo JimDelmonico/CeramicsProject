@@ -10,8 +10,8 @@ var logger = require('morgan');
 
 var bodyParser = require('body-parser');
 
-// var api = require('./routes/api');
-// var index = require('./routes/index');
+var api = require('./routes/api');
+var index = require('./routes/index');
 
 
 
@@ -21,7 +21,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(__dirname + '/public'));
-// app.use('/bower_components',  express.static(__dirname + '/bower_components'));
+app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -34,8 +34,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-//app.use('/', index);
-// app.use('/api', api);
+app.use('/', index);
+app.use('/api', api);
 // app.use('/', auth);
 
 // catch 404 and forward to error handler
