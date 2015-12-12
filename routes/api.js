@@ -4,8 +4,6 @@ var router = express.Router();
 /* GET home page. */
 
 
-router.use('/posts');
-
 router.route('/posts')
 	
 	//returns all posts
