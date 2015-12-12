@@ -37,6 +37,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 //app.use('/api', api);
 
+var http = require('http');
+http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'application/json'});
+    res.end('/');
+}).listen(process.env.PORT, process.env.IP);
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
