@@ -1,0 +1,104 @@
+<div class="container" >
+
+  <div class="row">
+
+        <form class='col s12 m12 l12 card' ng-Submit="calculate(croppedDataUrl, picFile)">
+
+          <div class="card-content">
+
+            <span class="card-title deep-purple-text text-accent-2">Analyze Ceramic</span>
+              
+            <h6 class="red-text">{{ error_message }}</h6>
+
+            <div class="row">
+              
+              <div class="input-field col s12">
+                
+                <input type="number" ng-model="ab" class ='validate deep-purple-text text-accent-2' required autofocus /> 
+                <label class="deep-purple-text text-accent-2" for="username">ab (xm*cm-1*K-1)</label>
+              
+              </div>
+            
+            </div>
+            
+            <div class="row">
+              
+              <div class="input-field col s12">
+                
+                <input type="text" ng-model="TgG" class ='validate deep-purple-text text-accent-2' required autofocus /> 
+                <label class="deep-purple-text text-accent-2" for="username">TgT &deg;C</label>
+              
+              </div>
+            
+            </div>
+
+            <div class="row">
+              
+              <div class="input-field col s12">
+                
+                <input type="number" ng-model="Ta" class ='validate deep-purple-text text-accent-2' required autofocus /> 
+                <label class="deep-purple-text text-accent-2" for="username">Ta &deg;C</label>
+              
+              </div>
+            
+            </div>
+
+            <div class="row">
+              
+              <div class="input-field col s12">
+                
+                <h5 class="light deep-purple-text text-accent-2">Assumed Values</h5>
+                <h6><span class="deep-purple-text text-accent-2">ofG</span> = 50 MPa</h6>
+                <h6><span class="deep-purple-text text-accent-2">EG</span> = 70 GPa</h6>
+              
+              </div>
+            
+            </div>
+
+            <div class="row">
+
+              <div class="input-field col s12 form deep-purple-text text-accent-2">
+
+                <div class="btn amber accent-4" ngf-select ng-model="picFile" accept="image/*" ngf-pattern="'image/*'" ngf-max-size="20MB">Please Provide an Image</div>
+                  
+                <br><br>
+
+                <h6>Crop</h6>
+
+                <div ngf-drop ng-model="picFile" ngf-pattern="image/*" class="cropArea col s12 m8 l6 ">
+                  
+                  <img-crop image="picFile  | ngfDataUrl" result-image="croppedDataUrl" result-image-quality="1.0" result-image-size="1000" ng-init="croppedDataUrl=''"></img-crop>
+
+                </div>
+    
+                <div class="col s12 l12">
+
+                  <h6>Preview</h6>
+                  
+                  <img class="preview" ng-src="{{croppedDataUrl}}" />
+                  
+                </div>
+
+              </div>
+
+            </div>
+
+          <div class="card-action">
+          
+            <button class="btn waves-effect waves-light amber accent-4" type="submit" name="action">Calculate Values
+              
+              <i class="material-icons right">send</i>
+            
+            </button>
+
+          </div>
+
+    </form>
+
+  </div>
+
+</div>
+
+
+
+        

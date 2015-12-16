@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+	flex: 1 0 auto;
+  
+ }
+
+
+
+input[type=text]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]), input[type=password]:focus:not([readonly])
+{
+
+
+	border-bottom: 1px solid #7c4dff;
+	box-shadow: 0 1px 0 0 #7c4dff;
+
+}
+
+.logo
+{
+
+  background-color: #FFF;
+    -webkit-mask-size: cover;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    z-index: 1;
+    -webkit-mask-image: url(../images/meow.svg);
+    mask-image: url(../images/meow.svg);
+    float: right;
+
+}
+
+
+
+/* ng-crop and file-upload */
+
+.cropArea {
+    background: #E4E4E4;
+    border-radius: 10px;
+    overflow: hidden;
+    height:350px;
+    margin-bottom: 40px;
+}
+
+.preview
+{
+
+  background: #E4E4E4;
+  border-radius: 10px;
+  width: 50%;
+  
+}
+
+
+/* End */
+
+/* ng-animate transition*/
+
+.animate.ng-enter, 
+.animate.ng-leave
+{ 
+    transition: opacity .75s ease-in-out;
+   -moz-transition: opacity .75s ease-in-out;
+   -webkit-transition: opacity .75s ease-in-out;
+} 
+
+.animate.ng-enter 
+{
+	display: : none;
+    opacity: 0;
+
+}
+.animate.ng-enter-active {
+    
+	display: initial;
+    opacity: 1;
+}
+.animate.ng-leave {
+
+	display: initial;
+    opacity: 1;
+}
+.animate.ng-leave-active {
+    opacity: 0;
+    display: none;
+}
+
+.animate.on-add {
+  background:white;
+}
+.animate.on {
+  background:yellow;
+}
+.animate.on-remove {
+  background:black;
+}
